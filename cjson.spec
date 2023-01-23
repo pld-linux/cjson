@@ -40,7 +40,8 @@ Pliki nagłówkowe biblioteki cJSON.
 install -d build
 cd build
 %cmake .. \
-	-DENABLE_CJSON_UTILS=ON
+	-DENABLE_CJSON_TEST:BOOL=OFF \
+	-DENABLE_CJSON_UTILS:BOOL=ON
 
 %install
 rm -rf $RPM_BUILD_ROOT
