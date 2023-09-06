@@ -1,15 +1,15 @@
 Summary:	Ultralightweight JSON parser in ANSI C
 Summary(pl.UTF-8):	Ultralekki parser formatu JSON napisany w ANSI C
 Name:		cjson
-Version:	1.7.15
+Version:	1.7.16
 Release:	1
 License:	MIT
 Group:		Libraries
 #Source0Download: https://github.com/DaveGamble/cJSON/releases
 Source0:	https://github.com/DaveGamble/cJSON/archive/v%{version}/cJSON-%{version}.tar.gz
-# Source0-md5:	921b4bcb401aa604dc632fdb1c8dbdea
+# Source0-md5:	9422f73fb9e4e524d77d9467d4b73536
 URL:		https://github.com/DaveGamble/cJSON
-BuildRequires:	cmake >= 2.8.5
+BuildRequires:	cmake >= 3.0
 BuildRequires:	rpmbuild(macros) >= 1.605
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
