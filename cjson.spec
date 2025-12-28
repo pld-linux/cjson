@@ -1,13 +1,13 @@
 Summary:	Ultralightweight JSON parser in ANSI C
 Summary(pl.UTF-8):	Ultralekki parser formatu JSON napisany w ANSI C
 Name:		cjson
-Version:	1.7.18
+Version:	1.7.19
 Release:	1
 License:	MIT
 Group:		Libraries
 #Source0Download: https://github.com/DaveGamble/cJSON/releases
 Source0:	https://github.com/DaveGamble/cJSON/archive/v%{version}/cJSON-%{version}.tar.gz
-# Source0-md5:	926245ca76bd04f338efcac489e2da9d
+# Source0-md5:	60d39f4f639a90907b305b36727430e1
 URL:		https://github.com/DaveGamble/cJSON
 BuildRequires:	cmake >= 3.0
 BuildRequires:	rpmbuild(macros) >= 1.605
@@ -57,16 +57,16 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc CHANGELOG.md CONTRIBUTORS.md LICENSE README.md
-%attr(755,root,root) %{_libdir}/libcjson.so.*.*.*
-%attr(755,root,root) %ghost %{_libdir}/libcjson.so.1
-%attr(755,root,root) %{_libdir}/libcjson_utils.so.*.*.*
-%attr(755,root,root) %ghost %{_libdir}/libcjson_utils.so.1
+%doc CHANGELOG.md CONTRIBUTORS.md LICENSE README.md SECURITY.md
+%{_libdir}/libcjson.so.*.*.*
+%ghost %{_libdir}/libcjson.so.1
+%{_libdir}/libcjson_utils.so.*.*.*
+%ghost %{_libdir}/libcjson_utils.so.1
 
 %files devel
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_libdir}/libcjson.so
-%attr(755,root,root) %{_libdir}/libcjson_utils.so
+%{_libdir}/libcjson.so
+%{_libdir}/libcjson_utils.so
 %{_includedir}/cjson
 %{_pkgconfigdir}/libcjson.pc
 %{_pkgconfigdir}/libcjson_utils.pc
